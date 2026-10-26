@@ -4,6 +4,6 @@ test("End to End Playwright Test", async({browser})=>{
     const page = await context.newPage();
     await page.goto("https://rahulshettyacademy.com/client/#/auth/login");
     await page.locator("#userEmail").fill("henryrichard@gmail.com");
-    await page.locator("#userPassword").fill("henryrichard@123");
+    await page.locator("#userPassword").fill("Henryrichard123@");
     await page.getByRole('button',{name: 'Login'}).click();
 })
