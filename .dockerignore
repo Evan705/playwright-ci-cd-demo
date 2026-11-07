@@ -1,0 +1,23 @@
+# Host-installed dependencies must not overwrite the container's install.
+node_modules
+**/node_modules
+
+# Generated output
+playwright-report
+test-results
+.next
+dist
+build
+
+# Git and local environment files
+.git
+**/.env
+**/.env.local
+.env.*.local
+
+# Unrelated app code (the Playwright tests only need the root project)
+backend
+frontend
+docs
+.claude
+.github
