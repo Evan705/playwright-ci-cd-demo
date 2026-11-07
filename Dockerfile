@@ -1,6 +1,6 @@
-# Playwright test runner image: Node 20 with all Playwright browsers
+# Playwright test runner image: latest Node with all Playwright browsers
 # (Chromium, Firefox, WebKit) and their OS-level dependencies pre-installed.
-FROM node:20-bookworm
+FROM node:latest
 
 ENV CI=true \
     PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
